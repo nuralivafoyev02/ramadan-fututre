@@ -1,26 +1,272 @@
 {
   "meta": {
-    "appName": "Ramazon 2026",
-    "version": "1.0.0",
-    "defaultCity": "Toshkent"
+    "title": "Ramazon taqvimi",
+    "hijriYear": 1447,
+    "year": 2026,
+    "timezone": "Asia/Tashkent",
+    "startDate": "2026-02-19",
+    "endDate": "2026-03-20",
+    "baseCity": "Toshkent",
+    "note": "Jadval Toshkent vaqti bilan. Boshqa hududlar uchun saharlik/iftorlik tafovuti kerak bo‘lsa, offset qo‘llanadi (db.json yoki ilova ichida)."
   },
-  "cities": [
+  "baseSchedules": {
+    "toshkent_2026": [
+      {
+        "day": 1,
+        "date": "2026-02-19",
+        "weekday": "Payshanba",
+        "dateLabel": "19-fevral",
+        "suhoor": "05:54",
+        "iftar": "18:05"
+      },
+      {
+        "day": 2,
+        "date": "2026-02-20",
+        "weekday": "Juma",
+        "dateLabel": "20-fevral",
+        "suhoor": "05:53",
+        "iftar": "18:07"
+      },
+      {
+        "day": 3,
+        "date": "2026-02-21",
+        "weekday": "Shanba",
+        "dateLabel": "21-fevral",
+        "suhoor": "05:51",
+        "iftar": "18:08"
+      },
+      {
+        "day": 4,
+        "date": "2026-02-22",
+        "weekday": "Yakshanba",
+        "dateLabel": "22-fevral",
+        "suhoor": "05:50",
+        "iftar": "18:09"
+      },
+      {
+        "day": 5,
+        "date": "2026-02-23",
+        "weekday": "Dushanba",
+        "dateLabel": "23-fevral",
+        "suhoor": "05:49",
+        "iftar": "18:10"
+      },
+      {
+        "day": 6,
+        "date": "2026-02-24",
+        "weekday": "Seshanba",
+        "dateLabel": "24-fevral",
+        "suhoor": "05:47",
+        "iftar": "18:11"
+      },
+      {
+        "day": 7,
+        "date": "2026-02-25",
+        "weekday": "Chorshanba",
+        "dateLabel": "25-fevral",
+        "suhoor": "05:46",
+        "iftar": "18:13"
+      },
+      {
+        "day": 8,
+        "date": "2026-02-26",
+        "weekday": "Payshanba",
+        "dateLabel": "26-fevral",
+        "suhoor": "05:44",
+        "iftar": "18:14"
+      },
+      {
+        "day": 9,
+        "date": "2026-02-27",
+        "weekday": "Juma",
+        "dateLabel": "27-fevral",
+        "suhoor": "05:43",
+        "iftar": "18:15"
+      },
+      {
+        "day": 10,
+        "date": "2026-02-28",
+        "weekday": "Shanba",
+        "dateLabel": "28-fevral",
+        "suhoor": "05:41",
+        "iftar": "18:16"
+      },
+      {
+        "day": 11,
+        "date": "2026-03-01",
+        "weekday": "Yakshanba",
+        "dateLabel": "1-mart",
+        "suhoor": "05:40",
+        "iftar": "18:17"
+      },
+      {
+        "day": 12,
+        "date": "2026-03-02",
+        "weekday": "Dushanba",
+        "dateLabel": "2-mart",
+        "suhoor": "05:38",
+        "iftar": "18:19"
+      },
+      {
+        "day": 13,
+        "date": "2026-03-03",
+        "weekday": "Seshanba",
+        "dateLabel": "3-mart",
+        "suhoor": "05:37",
+        "iftar": "18:20"
+      },
+      {
+        "day": 14,
+        "date": "2026-03-04",
+        "weekday": "Chorshanba",
+        "dateLabel": "4-mart",
+        "suhoor": "05:35",
+        "iftar": "18:21"
+      },
+      {
+        "day": 15,
+        "date": "2026-03-05",
+        "weekday": "Payshanba",
+        "dateLabel": "5-mart",
+        "suhoor": "05:34",
+        "iftar": "18:22"
+      },
+      {
+        "day": 16,
+        "date": "2026-03-06",
+        "weekday": "Juma",
+        "dateLabel": "6-mart",
+        "suhoor": "05:32",
+        "iftar": "18:23"
+      },
+      {
+        "day": 17,
+        "date": "2026-03-07",
+        "weekday": "Shanba",
+        "dateLabel": "7-mart",
+        "suhoor": "05:31",
+        "iftar": "18:24"
+      },
+      {
+        "day": 18,
+        "date": "2026-03-08",
+        "weekday": "Yakshanba",
+        "dateLabel": "8-mart",
+        "suhoor": "05:29",
+        "iftar": "18:25"
+      },
+      {
+        "day": 19,
+        "date": "2026-03-09",
+        "weekday": "Dushanba",
+        "dateLabel": "9-mart",
+        "suhoor": "05:27",
+        "iftar": "18:27"
+      },
+      {
+        "day": 20,
+        "date": "2026-03-10",
+        "weekday": "Seshanba",
+        "dateLabel": "10-mart",
+        "suhoor": "05:26",
+        "iftar": "18:28"
+      },
+      {
+        "day": 21,
+        "date": "2026-03-11",
+        "weekday": "Chorshanba",
+        "dateLabel": "11-mart",
+        "suhoor": "05:24",
+        "iftar": "18:29"
+      },
+      {
+        "day": 22,
+        "date": "2026-03-12",
+        "weekday": "Payshanba",
+        "dateLabel": "12-mart",
+        "suhoor": "05:22",
+        "iftar": "18:30"
+      },
+      {
+        "day": 23,
+        "date": "2026-03-13",
+        "weekday": "Juma",
+        "dateLabel": "13-mart",
+        "suhoor": "05:21",
+        "iftar": "18:31"
+      },
+      {
+        "day": 24,
+        "date": "2026-03-14",
+        "weekday": "Shanba",
+        "dateLabel": "14-mart",
+        "suhoor": "05:19",
+        "iftar": "18:32"
+      },
+      {
+        "day": 25,
+        "date": "2026-03-15",
+        "weekday": "Yakshanba",
+        "dateLabel": "15-mart",
+        "suhoor": "05:17",
+        "iftar": "18:33"
+      },
+      {
+        "day": 26,
+        "date": "2026-03-16",
+        "weekday": "Dushanba",
+        "dateLabel": "16-mart",
+        "suhoor": "05:15",
+        "iftar": "18:34"
+      },
+      {
+        "day": 27,
+        "date": "2026-03-17",
+        "weekday": "Seshanba",
+        "dateLabel": "17-mart",
+        "suhoor": "05:14",
+        "iftar": "18:35"
+      },
+      {
+        "day": 28,
+        "date": "2026-03-18",
+        "weekday": "Chorshanba",
+        "dateLabel": "18-mart",
+        "suhoor": "05:12",
+        "iftar": "18:37"
+      },
+      {
+        "day": 29,
+        "date": "2026-03-19",
+        "weekday": "Payshanba",
+        "dateLabel": "19-mart",
+        "suhoor": "05:10",
+        "iftar": "18:38"
+      },
+      {
+        "day": 30,
+        "date": "2026-03-20",
+        "weekday": "Juma",
+        "dateLabel": "20-mart",
+        "suhoor": "05:08",
+        "iftar": "18:39"
+      }
+    ]
+  },
+  "regions": [
     {
-      "name": "Toshkent",
-      "timezone": "Asia/Tashkent",
-      "schedule": [
-        { "date": "2026-02-18", "day": 1, "suhoor": "05:41", "iftar": "18:18" },
-        { "date": "2026-02-19", "day": 2, "suhoor": "05:40", "iftar": "18:19" },
-        { "date": "2026-02-20", "day": 3, "suhoor": "05:38", "iftar": "18:21" }
-      ]
-    },
-    {
-      "name": "Samarqand",
-      "timezone": "Asia/Samarkand",
-      "schedule": [
-        { "date": "2026-02-18", "day": 1, "suhoor": "05:45", "iftar": "18:16" },
-        { "date": "2026-02-19", "day": 2, "suhoor": "05:44", "iftar": "18:17" },
-        { "date": "2026-02-20", "day": 3, "suhoor": "05:42", "iftar": "18:19" }
+      "id": "toshkent_shahri",
+      "name": "Toshkent shahri",
+      "districts": [
+        {
+          "id": "toshkent",
+          "name": "Toshkent",
+          "base": "toshkent_2026",
+          "offset": {
+            "suhoorMin": 0,
+            "iftarMin": 0
+          }
+        }
       ]
     }
   ],
@@ -40,9 +286,18 @@
       }
     },
     "tips": [
-      { "title": "Suv rejasi", "text": "Iftordan sahargacha suvni bo‘lib iching: birdan ko‘p ichish og‘irlik beradi." },
-      { "title": "Yengil saharlik", "text": "Saharda oqsil+tolali ovqat (tuxum, suli, meva) energiyani ushlab turadi." },
-      { "title": "Uyqu balans", "text": "20–30 daqiqa kunduzgi power nap ibodat va ishga kuch beradi." }
+      {
+        "title": "Suv rejasi",
+        "text": "Iftordan sahargacha suvni bo‘lib iching: birdan ko‘p ichish og‘irlik beradi."
+      },
+      {
+        "title": "Yengil saharlik",
+        "text": "Saharda oqsil+tolali ovqat (tuxum, suli, meva) energiyani ushlab turadi."
+      },
+      {
+        "title": "Uyqu balans",
+        "text": "20–30 daqiqa kunduzgi power nap ibodat va ishga kuch beradi."
+      }
     ]
   }
 }
