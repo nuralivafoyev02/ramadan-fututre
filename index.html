@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Ramazon Web App</title>
+
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb1"></div>
+  <div class="bg-orb orb2"></div>
+
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo">☾</div>
+      <div>
+        <div class="title">Ramazon</div>
+        <div class="sub" id="subTitle">Offline • PWA</div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="chip" id="installBtn" hidden>⬇️ Install</button>
+      <button class="chip" id="themeBtn" title="Theme">🌓</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero card">
+      <div class="hero-left">
+        <div class="h-label">Bugungi jadval</div>
+        <div class="h-date" id="todayLabel">—</div>
+
+        <div class="select-row">
+          <label class="mini">Shahar</label>
+          <select id="citySelect" class="select"></select>
+        </div>
+
+        <div class="times">
+          <div class="timebox">
+            <div class="t-label">Saharlik</div>
+            <div class="t-value" id="suhoor">—</div>
+          </div>
+          <div class="timebox">
+            <div class="t-label">Iftor</div>
+            <div class="t-value" id="iftar">—</div>
+          </div>
+          <div class="timebox glow">
+            <div class="t-label" id="nextLabel">Keyingi</div>
+            <div class="t-value" id="countdown">—</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="moon">
+          <div class="moon-inner"></div>
+        </div>
+        <div class="progress-wrap">
+          <div class="p-label">Ramazon kuni</div>
+          <div class="p-big" id="dayNumber">—</div>
+          <div class="p-bar">
+            <div class="p-fill" id="dayFill"></div>
+          </div>
+          <div class="p-mini" id="dayMini">—</div>
+        </div>
+      </div>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="calendar">📅 Taqvim</button>
+      <button class="tab" data-tab="duas">🤲 Duolar</button>
+      <button class="tab" data-tab="dhikr">🧿 Zikr</button>
+      <button class="tab" data-tab="tips">✨ Foydali</button>
+    </nav>
+
+    <section class="card section" id="tab-calendar">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Ramazon taqvimi</div>
+          <div class="section-sub">Saharlik va iftor vaqtlari</div>
+        </div>
+        <div class="search">
+          <input id="searchDate" class="input" placeholder="YYYY-MM-DD" />
+          <button id="goDate" class="btn">Top</button>
+        </div>
+      </div>
+
+      <div class="table" id="calendarTable"></div>
+    </section>
+
+    <section class="card section hidden" id="tab-duas">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Duolar</div>
+          <div class="section-sub">Saharlik va iftor duolari</div>
+        </div>
+        <div class="row">
+          <button class="chip" data-copy="suhoor">📋 Saharlik</button>
+          <button class="chip" data-copy="iftar">📋 Iftor</button>
+        </div>
+      </div>
+
+      <div class="dua-grid">
+        <article class="dua-card">
+          <div class="dua-title" id="duaSuhoorTitle">—</div>
+          <div class="dua-ar" id="duaSuhoorAr">—</div>
+          <div class="dua-la" id="duaSuhoorLa">—</div>
+          <div class="dua-mean" id="duaSuhoorMean">—</div>
+        </article>
+
+        <article class="dua-card">
+          <div class="dua-title" id="duaIftarTitle">—</div>
+          <div class="dua-ar" id="duaIftarAr">—</div>
+          <div class="dua-la" id="duaIftarLa">—</div>
+          <div class="dua-mean" id="duaIftarMean">—</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card section hidden" id="tab-dhikr">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Zikr hisoblagich</div>
+          <div class="section-sub">Offline saqlanadi (LocalStorage)</div>
+        </div>
+        <div class="row">
+          <button class="chip" id="resetDhikr">♻️ Reset</button>
+        </div>
+      </div>
+
+      <div class="dhikr">
+        <div class="counter" id="dhikrCount">0</div>
+        <div class="dhikr-row">
+          <button class="btn big" id="tapDhikr">+1</button>
+          <button class="btn ghost" id="minusDhikr">-1</button>
+        </div>
+        <div class="dhikr-mini" id="dhikrHint">Har bosishda vibratsiya (telefonlarda) ✅</div>
+      </div>
+    </section>
+
+    <section class="card section hidden" id="tab-tips">
+      <div class="section-head">
+        <div>
+          <div class="section-title">Foydali maslahatlar</div>
+          <div class="section-sub">Ramazonda energiya va tartib</div>
+        </div>
+      </div>
+
+      <div class="tips" id="tipsList"></div>
+    </section>
+
+    <footer class="footer">
+      <div id="offlineBadge" class="badge">🟢 Offline tayyor</div>
+      <div class="muted">Vercel deploy • Backend yo‘q • db.json</div>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{
+  "meta": {
+    "appName": "Ramazon 2026",
+    "version": "1.0.0",
+    "defaultCity": "Toshkent"
+  },
+  "cities": [
+    {
+      "name": "Toshkent",
+      "timezone": "Asia/Tashkent",
+      "schedule": [
+        { "date": "2026-02-18", "day": 1, "suhoor": "05:41", "iftar": "18:18" },
+        { "date": "2026-02-19", "day": 2, "suhoor": "05:40", "iftar": "18:19" },
+        { "date": "2026-02-20", "day": 3, "suhoor": "05:38", "iftar": "18:21" }
+      ]
+    },
+    {
+      "name": "Samarqand",
+      "timezone": "Asia/Samarkand",
+      "schedule": [
+        { "date": "2026-02-18", "day": 1, "suhoor": "05:45", "iftar": "18:16" },
+        { "date": "2026-02-19", "day": 2, "suhoor": "05:44", "iftar": "18:17" },
+        { "date": "2026-02-20", "day": 3, "suhoor": "05:42", "iftar": "18:19" }
+      ]
+    }
+  ],
+  "content": {
+    "dua": {
+      "suhoor": {
+        "title": "Saharlik duosi",
+        "arabic": "نَوَيْتُ أَنْ أَصُومَ صَوْمَ شَهْرِ رَمَضَانَ مِنَ الْفَجْرِ إِلَى الْمَغْرِبِ خَالِصًا لِلّٰهِ تَعَالَى",
+        "latin": "Navaytu an asuuma sovma shahri ramazona minal-fajri ilal-mag‘ribi xolisan lillahi ta‘aalaa.",
+        "meaning": "Ramazon oyining ro‘zasini tongdan shomgacha Alloh uchun ixlos bilan tutishga niyat qildim."
+      },
+      "iftar": {
+        "title": "Iftor duosi",
+        "arabic": "اَللّٰهُمَّ لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَيْكَ تَوَكَّلْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ",
+        "latin": "Allohumma laka sumtu va bika aamantu va ‘alayka tavakkaltu va ‘alaa rizqika aftartu.",
+        "meaning": "Allohim, Sen uchun ro‘za tutdim, Senga iymon keltirdim, Senga tavakkal qildim va Sening rizqing bilan iftor qildim."
+      }
+    },
+    "tips": [
+      { "title": "Suv rejasi", "text": "Iftordan sahargacha suvni bo‘lib iching: birdan ko‘p ichish og‘irlik beradi." },
+      { "title": "Yengil saharlik", "text": "Saharda oqsil+tolali ovqat (tuxum, suli, meva) energiyani ushlab turadi." },
+      { "title": "Uyqu balans", "text": "20–30 daqiqa kunduzgi power nap ibodat va ishga kuch beradi." }
+    ]
+  }
+}
